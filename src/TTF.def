@@ -1,0 +1,20 @@
+EXPORTS
+	TTLibraryInit
+	TTLibraryFree
+	TTFontLoadFromMemory
+	TTFontFree
+	TTFontGetBound
+	TTFontIsUCS2Supported
+	TTFontGetGlyphIDUCS2
+	TTFontIsUCS4Supported
+	TTFontGetGlyphIDUCS4
+	TTGlyphInit
+	TTGlyphFree
+	TTGlyphGetBound
+	TTGlyphIsSimple
+	TTGlyphSimpleGetContourNumber
+	TTGlyphSimpleGetContourEndPointerIndex
+	TTGlyphSimpleGetPointNumber
+	TTGlyphSimpleGetPointArray
+	TTGlyphCompoundGetChildNumber
+	TTGlyphCompoundGetChildArray
