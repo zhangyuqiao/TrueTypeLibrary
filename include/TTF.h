@@ -14,12 +14,12 @@ extern "C" {
 #define TTINVALIEFONTFORMAT 4
 
 
-extern"C" uint8_t __stdcall TTLibraryInit(void *(*const pAlloc)(size_t size), void(*const pFree)(void *p));
-extern"C" uint8_t __stdcall TTLibraryFree();
+uint8_t __stdcall TTLibraryInit(void *(*const pAlloc)(size_t size), void(*const pFree)(void *p));
+uint8_t __stdcall TTLibraryFree();
 
 typedef struct TTHFont__ {} *TTHFont;
-extern"C" uint8_t __stdcall TTFontLoadFromMemory(const void *pData, size_t size, TTHFont *phFont);
-extern"C" uint8_t __stdcall TTFontFree(TTHFont hFont);
+uint8_t __stdcall TTFontLoadFromMemory(const void *pData, size_t size, TTHFont *phFont);
+uint8_t __stdcall TTFontFree(TTHFont hFont);
 
 typedef struct
 {
