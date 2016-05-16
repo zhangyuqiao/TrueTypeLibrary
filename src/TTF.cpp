@@ -3,7 +3,7 @@
 static void *(__stdcall *g_pAlloc)(size_t size) = nullptr;
 static void (__stdcall *g_pFree)(void *p) = nullptr;
 
-extern"C" uint8_t __stdcall TTLibraryInit(void *(* const pAlloc)(size_t size),void(* const pFree)(void *p))
+extern"C" uint8_t __stdcall TTLibraryInit(void *(__stdcall* const pAlloc)(size_t size),void(__stdcall* const pFree)(void *p))
 {
 	if (pAlloc == nullptr || pFree == nullptr)
 		return TTINVALIDARGUMENTS;
