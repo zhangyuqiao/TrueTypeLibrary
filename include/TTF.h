@@ -14,7 +14,7 @@ extern "C" {
 #define TTINVALIEFONTFORMAT 4
 
 
-uint8_t __stdcall TTLibraryInit(void *(*const pAlloc)(size_t size), void(*const pFree)(void *p));
+uint8_t __stdcall TTLibraryInit(void *(__stdcall *const pAlloc)(size_t size), void(__stdcall *const pFree)(void *p));
 uint8_t __stdcall TTLibraryFree();
 
 typedef struct TTHFont__ {} *TTHFont;
