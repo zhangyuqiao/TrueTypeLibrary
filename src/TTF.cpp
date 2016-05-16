@@ -1,7 +1,7 @@
 #include "TTF.h"
 
-static void *(*g_pAlloc)(size_t size) = nullptr;
-static void (*g_pFree)(void *p) = nullptr;
+static void *(__stdcall *g_pAlloc)(size_t size) = nullptr;
+static void (__stdcall *g_pFree)(void *p) = nullptr;
 
 extern"C" uint8_t __stdcall TTLibraryInit(void *(* const pAlloc)(size_t size),void(* const pFree)(void *p))
 {
